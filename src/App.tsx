@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./animate.css";
 import "./custom.css";
 import { HomeEntry } from "./routes/0_home/HomeEntry";
@@ -11,34 +11,31 @@ import { Navbar } from "./routes/Shared/Navbar";
 import "./theme.scss";
 
 function App() {
-    const router = createBrowserRouter([
-        {
-            path: "/ueber-uns",
-            element: <AboutUsEntry></AboutUsEntry>,
-        },
-        {
-            path: "/mitglied-werden",
-            element: <RegisterMemberEntry></RegisterMemberEntry>,
-        },
-        {
-            path: "/angebote",
-            element: <EventsEntry></EventsEntry>,
-        },
-        {
-            path: "/kontakt",
-            element: <ContactEntry></ContactEntry>,
-        },
-        {
-            path: "*",
-            element: <HomeEntry />,
-        },
-    ]);
     return (
         <>
             <Navbar></Navbar>
             <div className="d-flex flex-column align-items-center">
-                <div className="w-75">
-                    <RouterProvider router={router} />
+    
+                <div className="" style={{width: "1200px"}}>
+                    <Routes>
+                        <Route
+                            element={<AboutUsEntry />}
+                            path="/ueber-uns"
+                        ></Route>
+                        <Route
+                            element={<RegisterMemberEntry />}
+                            path="/mitglied-werden"
+                        ></Route>
+                        <Route
+                            element={<EventsEntry />}
+                            path="/angebote"
+                        ></Route>
+                        <Route
+                            element={<ContactEntry />}
+                            path="/kontakt"
+                        ></Route>
+                        <Route path="*" element={<HomeEntry />}></Route>
+                    </Routes>
                 </div>
             </div>
             <Footer></Footer>

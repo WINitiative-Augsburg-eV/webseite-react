@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 // import logo from "./logo.png";
@@ -11,19 +12,19 @@ export const Navbar = () => {
     };
 
     const topmenu = [
-        { title: "Über Uns", url: "ueber-uns/" },
-        { title: "Mitglied werden", url: "mitglied-werden/" },
-        { title: "Interessante Angebote", url: "angebote/" },
-        { title: "Kontakt", url: "kontakt/" },
+        { title: "Über Uns", url: "ueber-uns" },
+        { title: "Mitglied werden", url: "mitglied-werden" },
+        { title: "Interessante Angebote", url: "angebote" },
+        { title: "Kontakt", url: "kontakt" },
     ];
 
     return (
         <div className="navigation-wrap start-header start-style">
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
-                    <a
+                    <Link
                         className="navbar-brand text-dark font-weight-bold big d-flex align-items-center"
-                        href="{{site.baseurl}}/"
+                        to="*"
                     >
                         <div>
                             <img
@@ -35,7 +36,7 @@ export const Navbar = () => {
 
                             <span className="d-none d-md-inline-block"></span>
                         </div>
-                    </a>{" "}
+                    </Link>{" "}
                     <span className="mobile-dash"> | </span>
                     <div className="d-flex align-items-center">
                         <a
@@ -113,12 +114,12 @@ export const Navbar = () => {
                             {topmenu.map((m) => {
                                 return (
                                     <li className="nav-item">
-                                        <a
+                                        <Link
                                             className="hover-underline-animation animate__animated animate__menubutton nav-link px-3"
-                                            href={m.url}
+                                            to={m.url}
                                         >
                                             {m.title}
-                                        </a>
+                                        </Link>
                                     </li>
                                 );
                             })}
