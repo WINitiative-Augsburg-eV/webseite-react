@@ -23,7 +23,7 @@ export const Navbar = () => {
                 <div className="container">
                     <Link
                         className="navbar-brand text-dark font-weight-bold big d-flex align-items-center"
-                        to="*"
+                        to="/"
                     >
                         <div>
                             <img
