@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const HomeIntro = () => {
     return (
         <div className="welcome ">
@@ -11,25 +13,29 @@ export const HomeIntro = () => {
                             Mitglied kannst du bei der Planung und Organisation
                             mitwirken und wertvolle Kontakte zu WINern aus
                             verschiedenen Semestern knüpfen. Du brauchst noch
-                            mehr Gründe?{" "}
-                            <a style={{ color: "#037c94" }} href="/ueber-uns">
-                                Dann schau hier mal vorbei!
-                            </a>
+                            mehr Gründe?
                         </p>
                         <center>
-                            <a
-                                href={`/mitglied-werden`}
+                            <Link
+                                to={`/ueber-uns`}
+                                className="btn btn-info text-white px-5 mx-4 btn-lg"
+                                style={{ color: "#037c94" }}
+                            >
+                                Über uns
+                            </Link>
+                            <Link
+                                to={`/mitglied-werden`}
                                 className="btn btn-info text-white px-5 btn-lg"
                                 style={{ color: "#037c94" }}
                             >
-                                Mitglied werden &#x1F4C4
-                            </a>
+                                Mitglied werden
+                            </Link>
                         </center>
                     </div>
                 </div>
                 <div className="animate__animated animate__fadeInUp main-page-card">
                     <div className="content">
-                        <h5>Melde dich zum nächsten WIN-Treffen an</h5>
+                        <h5>Das WIN-Treffen</h5>
                         <p>
                             Das WIN-Treffen bietet Wirtschaftsinformatik
                             Studierenden eine entspannte Atmosphäre, um sich
@@ -39,13 +45,13 @@ export const HomeIntro = () => {
                             lernen und ihr Fachwissen und Erfahrungen zu nutzen.{" "}
                         </p>
                         <center>
-                            <a
-                                href={`/win-treffen`}
+                            <Link
+                                to={`/win-treffen`}
                                 className="btn btn-info text-white px-5 btn-lg"
                                 style={{ color: "#037c94" }}
                             >
-                                zur Anmeldung &#x1F37B
-                            </a>
+                                 Anmeldung
+                            </Link>
                         </center>
                     </div>
                 </div>

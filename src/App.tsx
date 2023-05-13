@@ -41,7 +41,7 @@ function App() {
                             path="/datenschutzerklaerung"
                         ></Route>
                         <Route element={<Imprint />} path="/impressum"></Route>
-                        <Route path="/" element={<HomeEntry />}></Route>
+                        <Route path="/*" element={<HomeEntry />}></Route>
                     </Routes>
                 </div>
             </div>

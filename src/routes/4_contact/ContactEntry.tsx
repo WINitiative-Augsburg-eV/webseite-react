@@ -1,13 +1,11 @@
-// export const ContactEntry = () => {
-//     return <></>;
-// };
+
 
 import React from "react";
 import { PageTitle } from "../Shared/PageTitle";
 
 export const ContactEntry: React.FC = () => {
     return (
-        <>
+        <div className="container">
             <PageTitle title="Kontakt"></PageTitle>
             <form
                 action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d"
@@ -57,7 +55,7 @@ export const ContactEntry: React.FC = () => {
                     value="DSGVO"
                     required
                 />
-                <label htmlFor="pp" style={{ fontSize: "13pt" }}>
+                <label htmlFor="pp" style={{ fontSize: "13pt" }} className="mx-2">
                     Hiermit stimme ich der{" "}
                     <a
                         href="/datenschutzerklaerung"
@@ -74,6 +72,6 @@ export const ContactEntry: React.FC = () => {
                     value="https://winitiative-augsburg.de/nachricht-erfolgreich"
                 />
             </form>
-        </>
+        </div>
     );
 };

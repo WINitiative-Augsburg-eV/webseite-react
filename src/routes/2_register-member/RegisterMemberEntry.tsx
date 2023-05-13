@@ -46,7 +46,7 @@ export const RegisterMemberEntry: React.FC = () => {
                     />
                     <input type="hidden" name="_captcha" value="false" />
                     <div className="form-row">
-                        <div className="form-group col-md-12">
+                        <div className="form-group col-md-20 mb-2">
                             <legend
                                 style={{
                                     fontSize: "14pt",
@@ -61,8 +61,9 @@ export const RegisterMemberEntry: React.FC = () => {
                                 name="zahlung"
                                 value="an-mich-senden"
                                 required
+                                className="mx-2"
                             />
-                            <label htmlFor="pp" style={{ fontSize: "13pt" }}>
+                            <label htmlFor="pp" style={{ fontSize: "13pt", marginRight: 20 }}>
                                 Selbst unterschreiben
                             </label>
                             <br className="mobile-break" />
@@ -71,42 +72,45 @@ export const RegisterMemberEntry: React.FC = () => {
                                 id="br"
                                 name="zahlung"
                                 value="beim-treffen"
+                                className="mx-2"
                             />
                             <label htmlFor="br" style={{ fontSize: "13pt" }}>
                                 Beim Treffen unterschreiben
                             </label>
                         </div>
-                        <div className="form-group col-md-6">
-                            <input
-                                className="form-control"
-                                type="text"
-                                name="Vorname"
-                                placeholder="Vorname*"
-                                required
-                            />
-                            <input
-                                className="form-control"
-                                type="text"
-                                name="Nachname"
-                                placeholder="Nachname*"
-                                required
-                            />
-                        </div>
-                        <div className="form-group col-md-6">
-                            <input
-                                className="form-control"
-                                type="email"
-                                name="email"
-                                placeholder="E-Mail Addresse*"
-                                required
-                            />
-                            <input
-                                className="form-control"
-                                type="text"
-                                name="Handynummer"
-                                placeholder="Handynummer*"
-                                required
-                            />
+                        <div className="d-flex p-2">
+                            <div className="form-group col-md-6">
+                                <input
+                                    className="form-control"
+                                    type="text"
+                                    name="Vorname"
+                                    placeholder="Vorname*"
+                                    required
+                                />
+                                <input
+                                    className="form-control"
+                                    type="text"
+                                    name="Nachname"
+                                    placeholder="Nachname*"
+                                    required
+                                />
+                            </div>
+                            <div className="form-group col-md-6">
+                                <input
+                                    className="form-control"
+                                    type="email"
+                                    name="email"
+                                    placeholder="E-Mail Addresse*"
+                                    required
+                                />
+                                <input
+                                    className="form-control"
+                                    type="text"
+                                    name="Handynummer"
+                                    placeholder="Handynummer*"
+                                    required
+                                />
+                            </div>
                         </div>
                         <div className="form-group col-md-12">
                             <span style={{ fontSize: "17px" }}>
@@ -126,10 +130,11 @@ export const RegisterMemberEntry: React.FC = () => {
                             type="checkbox"
                             id="pp"
                             name="Datenschutzbedingungen"
+                            className=""
                             value="DSGVO"
                             required
                         />
-                        <label style={{ font: "13pt" }}>
+                        <label style={{ font: "13pt" }} className="mx-2">
                             Hiermit stimme ich der{" "}
                             <a
                                 href="/datenschutzerklaerung"
@@ -147,11 +152,11 @@ export const RegisterMemberEntry: React.FC = () => {
                             value="Senden"
                         />
                     </center>
-                    <input
+                    {/* <input
                         type="hidden"
                         name="_next"
                         value="https://winitiative-augsburg.de/danke"
-                    />
+                    /> */}
                 </form>
             </div>
         </div>
