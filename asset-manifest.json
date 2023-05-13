@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webseite-react/static/css/main.a5e56072.css",
-    "main.js": "/webseite-react/static/js/main.adb89633.js",
+    "main.js": "/webseite-react/static/js/main.a684b650.js",
     "static/media/Bier_Pong_Becher_Aufstellung.jpg": "/webseite-react/static/media/Bier_Pong_Becher_Aufstellung.a6c1d5321b4e3bb74a5b.jpg",
     "static/media/O-Phase-2022.jpg": "/webseite-react/static/media/O-Phase-2022.98fc4743348f2ee6667a.jpg",
     "static/media/DigiPizzaBier_Ankuendigungsfolie_FIM_FIT.jpg": "/webseite-react/static/media/DigiPizzaBier_Ankuendigungsfolie_FIM_FIT.ab00480f6e1e92637013.jpg",
@@ -50,10 +50,10 @@
     "static/media/logo.png": "/webseite-react/static/media/logo.a1494f4f4d7da1d67558.png",
     "index.html": "/webseite-react/index.html",
     "main.a5e56072.css.map": "/webseite-react/static/css/main.a5e56072.css.map",
-    "main.adb89633.js.map": "/webseite-react/static/js/main.adb89633.js.map"
+    "main.a684b650.js.map": "/webseite-react/static/js/main.a684b650.js.map"
   },
   "entrypoints": [
     "static/css/main.a5e56072.css",
-    "static/js/main.adb89633.js"
+    "static/js/main.a684b650.js"
   ]
 }
