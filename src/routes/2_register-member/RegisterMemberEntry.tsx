@@ -1,9 +1,10 @@
+import { PageTitle } from "../Shared/PageTitle";
+
 export const RegisterMemberEntry: React.FC = () => {
     return (
         <div className="container">
-            <div >
-                <h1 className="mx-auto" style={{width: "300px"}}>Die WINitiative</h1>
-            </div>
+            <PageTitle title="Mitgliedsantrag"></PageTitle>
+
             <p>
                 Hier kannst du deinen Mitgliedsantrag für die WINitiative
                 einreichen. Dabei hast du zwei Möglichkeiten:

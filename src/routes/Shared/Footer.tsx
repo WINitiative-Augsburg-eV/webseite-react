@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
     const footerMenu = [
-        { title: "Startseite", url: "ueber-uns/" },
+        { title: "Startseite", url: "/" },
         { title: "Datenschutzerklärung", url: "datenschutzerklaerung/" },
         { title: "Impressum", url: "impressum/" },
         { title: "Mitglied werden", url: "mitglied-werden/" },
@@ -12,9 +14,9 @@ export const Footer = () => {
                 {footerMenu.map((m) => (
                     <>
                         <li>
-                            <a href="{% unless item.external %}{{site.baseurl}}/{% endunless %}{{item.url}}">
+                            <Link to={m.url}>
                                 {m.title}
-                            </a>
+                            </Link>
                         </li>
                     </>
                 ))}

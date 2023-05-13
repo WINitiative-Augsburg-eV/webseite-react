@@ -1,16 +1,17 @@
 import React from "react";
+import { PageTitle } from "../Shared/PageTitle";
+import pizza_und_bier from "./DigiPizzaBier_Ankuendigungsfolie_FIM_FIT.jpg";
 
 export const EventsEntry: React.FC = () => {
     return (
-        <>
+        <div className="container">
+            <PageTitle title="Interessante Angebote für WINer"></PageTitle>
+
             <div className="angebote" id="angebote">
                 <div className="card" id="card">
                     <div className="cardy__content">
                         <center>
-                                <img
-                                    src=""
-                                    alt=""
-                                />
+                            <img src={pizza_und_bier} alt="" />
                         </center>
                         <div>
                             <center>
@@ -86,6 +87,6 @@ export const EventsEntry: React.FC = () => {
                     </p>
                 </div>
             </section>
-        </>
+        </div>
     );
 };

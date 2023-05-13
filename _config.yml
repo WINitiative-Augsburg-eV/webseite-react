@@ -1,0 +1,41 @@
+title: "WINitiative Augsburg e.V."
+description: "Willkommen auf der Website der WINitiative Augsburg! Hier kannst du deinen Mitgliedsantrag stellen und dich zu unseren Events anmelden."
+email: fritz.duerrwanger@winitiative-augsburg.de
+timezone: UTC+2
+baseurl: ""
+permalink: "/:title/"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/4ad55223-b284-4398-8205-c4bac155f6f9.jpg'
+author: Sal
+
+paginate: 20
+
+
+disqus: 'demowebsite'
+locale: de
+lang: de
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+# Social
+social:
+  instagram: https://www.instagram.com/winitiative/?hl=de
+  facebook: https://chat.whatsapp.com/LBGoeEN4y088OHvIfs3IWt
+  discord: https://discord.gg/8YSHVDHjBN
+
+
+# Plugins
+plugins:
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
