@@ -11,7 +11,7 @@ export const PageTitle = ({ title }: { title?: string }) => {
                 />
                 <link rel="icon" href="{{ site.baseurl }}/{{site.favicon}}" />
 
-                <title>{title ?? "WINitiative Augsburg e.V."}</title>
+                <title>{title? title + " | WINitiative Augsburg e.V.": "Startseite | WINitiative Augsburg e.V."}</title>
             </Helmet>
             {title && <h1 className="text-center mb-4">{title}</h1>}
         </>
