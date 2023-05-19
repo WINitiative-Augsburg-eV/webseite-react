@@ -6,12 +6,15 @@ import { AboutUsEntry } from "./routes/1_about-us/AboutUsEntry";
 import { RegisterMemberEntry } from "./routes/2_register-member/RegisterMemberEntry";
 import { EventsEntry } from "./routes/3_events/EventEntry";
 import { ContactEntry } from "./routes/4_contact/ContactEntry";
-import { DataProtection } from "./routes/DataProtection/DataProtection";
-import { Imprint } from "./routes/Imprint/Imprint";
+import { Alumni } from "./routes/Alumni";
+import { AnmeldungErfolgreich } from "./routes/AnmeldungErfolgreich";
+import { Danke } from "./routes/Danke";
+import { DataProtection } from "./routes/DataProtection";
+import { Imprint } from "./routes/Imprint";
 import { Footer } from "./routes/Shared/Footer";
 import { Navbar } from "./routes/Shared/Navbar";
+import { WinTreffen } from "./routes/WinTreffen";
 import "./theme.scss";
-
 
 function App() {
     return (
@@ -36,10 +39,21 @@ function App() {
                             element={<ContactEntry />}
                             path="/kontakt"
                         ></Route>
+                        <Route element={<Danke />} path="/danke"></Route>
+                        <Route
+                            element={<AnmeldungErfolgreich />}
+                            path="/anmeldung-erfolgreich"
+                        ></Route>
+                        <Route
+                            element={<WinTreffen />}
+                            path="/win-treffen"
+                        ></Route>
+                        <Route element={<Alumni />} path="/alumni"></Route>
                         <Route
                             element={<DataProtection />}
                             path="/datenschutzerklaerung"
                         ></Route>
+
                         <Route element={<Imprint />} path="/impressum"></Route>
                         <Route path="/*" element={<HomeEntry />}></Route>
                     </Routes>

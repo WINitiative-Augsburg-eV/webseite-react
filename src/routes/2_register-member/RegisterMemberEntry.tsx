@@ -36,7 +36,7 @@ export const RegisterMemberEntry: React.FC = () => {
             <br />
             <div>
                 <form
-                    action="https://formsubmit.co/09d59bd4883cc050554222c88652ce2d"
+                    action="https://formsubmit.co/e54febc83b1ebbc417630d1238dfe6fe"
                     method="POST"
                 >
                     <input
@@ -152,11 +152,11 @@ export const RegisterMemberEntry: React.FC = () => {
                             value="Senden"
                         />
                     </center>
-                    {/* <input
+                    <input
                         type="hidden"
                         name="_next"
                         value="https://winitiative-augsburg.de/danke"
-                    /> */}
+                    />
                 </form>
             </div>
         </div>

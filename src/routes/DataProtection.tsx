@@ -1,4 +1,4 @@
-import { PageTitle } from "../Shared/PageTitle";
+import { PageTitle } from "./Shared/PageTitle";
 
 export const DataProtection = () => {
     return (
